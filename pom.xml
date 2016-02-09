@@ -1,67 +1,178 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.redhat.lightblue</groupId>
-	<artifactId>lightblue-bom</artifactId>
-	<version>1.11.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<properties>
-		<migrator.version>2.15.0-SNAPSHOT</migrator.version>
-		<client.version>4.0.0-SNAPSHOT</client.version>
-		<lightblue.version>1.11.0-SNAPSHOT</lightblue.version>
-	</properties>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.redhat.lightblue.migrator</groupId>
-				<artifactId>lightblue-migrator-facade</artifactId>
-				<version>${migrator.version}</version>
-			</dependency>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Copyright 2013 Red Hat, Inc. and/or its affiliates.
 
-			<dependency>
-				<groupId>com.redhat.lightblue.mongo</groupId>
-				<artifactId>lightblue-mongo</artifactId>
-				<version>${lightblue.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.redhat.lightblue</groupId>
-				<artifactId>lightblue-core-crud</artifactId>
-				<version>${lightblue.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.redhat.lightblue</groupId>
-				<artifactId>lightblue-core-util</artifactId>
-				<version>${lightblue.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.redhat.lightblue.rest</groupId>
-				<artifactId>lightblue-rest-metadata</artifactId>
-				<version>${lightblue.version}</version>
-				<classifier>classes</classifier>
-			</dependency>
+This file is part of lightblue.
 
-			<dependency>
-				<groupId>com.redhat.lightblue.client</groupId>
-				<artifactId>lightblue-client-core</artifactId>
-				<version>${client.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.redhat.lightblue.client</groupId>
-				<artifactId>lightblue-client-http</artifactId>
-				<version>${client.version}</version>
-			</dependency>
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-			<dependency>
-				<groupId>com.redhat.lightblue.client</groupId>
-				<artifactId>lightblue-client-integration-test</artifactId>
-				<version>${client.version}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>com.redhat.lightblue.hook</groupId>
-				<artifactId>lightblue-audit-hook</artifactId>
-				<version>1.10.0-SNAPSHOT</version>
-				<scope>test</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses />.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <relativePath />
+        <version>7</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.redhat.lightblue</groupId>
+    <artifactId>lightblue-bom-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.11.0-SNAPSHOT</version>
+    <name>lightblue-bom: ${project.groupId}|${project.artifactId}</name>
+    <description>Lightblue bom</description>
+    <licenses>
+        <license>
+            <name>GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007</name>
+            <url>http://www.gnu.org/licenses/gpl-3.0-standalone.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:git:https://github.com/lightblue-platform/lightblue-core.git</connection>
+        <developerConnection>scm:git:git@github.com:lightblue-platform/lightblue-core.git</developerConnection>
+        <url>https://github.com/lightblue-platform/lightblue-core</url>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+    <dependencyManagement>
+    </dependencyManagement>
+    <dependencies>
+    </dependencies>
+    <modules>
+        <module>bom</module>
+    </modules>
+    <properties>
+        <sonar.exclusions>**/*Test.java,**/*Exception.java</sonar.exclusions>
+        <sonar.jdbc.url>jdbc:mysql://127.0.0.1:3306/sonar?useUnicode=true&amp;characterEncoding=utf8&amp;rewriteBatchedStatements=true</sonar.jdbc.url>
+        <sonar.jdbc.username>sonar</sonar.jdbc.username>
+        <sonar.jdbc.password>sonar</sonar.jdbc.password>
+        <sonar.host.url>http://127.0.0.1:8080</sonar.host.url>
+        <sonar.projectName>lightblue-core</sonar.projectName>
+
+        <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
+        <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+        <maven.compiler.debuglevel>lines,vars,source</maven.compiler.debuglevel>
+        <maven.compiler.verbose>true</maven.compiler.verbose>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>3.0.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <format>xml</format>
+                    <maxmem>256m</maxmem>
+                    <!-- aggregated reports for multi-module projects -->
+                    <aggregate>true</aggregate>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <version>2.5</version>
+                        <configuration>
+                            <tagNameFormat>V@{project.version}</tagNameFormat>
+                            <autoVersionSubmodules>true</autoVersionSubmodules>
+                            <useReleaseProfile>false</useReleaseProfile>
+                            <releaseProfiles>release</releaseProfiles>
+                            <goals>deploy</goals>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <configuration>
+                            <useAgent>false</useAgent>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.6.2</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <serverId>ossrh</serverId>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>2.2.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.9.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                                <configuration>
+                                    <additionalparam>-Xdoclint:none</additionalparam>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                      <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <configuration>
+                          <source>1.7</source>
+                          <target>1.7</target>
+                        </configuration>
+                      </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

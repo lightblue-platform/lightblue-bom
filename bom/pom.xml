@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.redhat.lightblue</groupId>
+	<artifactId>lightblue-bom</artifactId>
+	<version>1.11.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
+		<migrator.version>2.15.0-SNAPSHOT</migrator.version>
+		<client.version>4.0.0-SNAPSHOT</client.version>
+		<lightblue.version>1.11.0-SNAPSHOT</lightblue.version>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.redhat.lightblue.migrator</groupId>
+				<artifactId>lightblue-migrator-facade</artifactId>
+				<version>${migrator.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.redhat.lightblue.mongo</groupId>
+				<artifactId>lightblue-mongo</artifactId>
+				<version>${lightblue.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.redhat.lightblue</groupId>
+				<artifactId>lightblue-core-crud</artifactId>
+				<version>${lightblue.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.redhat.lightblue</groupId>
+				<artifactId>lightblue-core-util</artifactId>
+				<version>${lightblue.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.redhat.lightblue.rest</groupId>
+				<artifactId>lightblue-rest-metadata</artifactId>
+				<version>${lightblue.version}</version>
+				<classifier>classes</classifier>
+			</dependency>
+
+			<dependency>
+				<groupId>com.redhat.lightblue.client</groupId>
+				<artifactId>lightblue-client-core</artifactId>
+				<version>${client.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.redhat.lightblue.client</groupId>
+				<artifactId>lightblue-client-http</artifactId>
+				<version>${client.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.redhat.lightblue.client</groupId>
+				<artifactId>lightblue-client-integration-test</artifactId>
+				<version>${client.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.redhat.lightblue.hook</groupId>
+				<artifactId>lightblue-audit-hook</artifactId>
+				<version>1.10.0-SNAPSHOT</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
