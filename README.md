@@ -1,6 +1,6 @@
 A bom maven dependency for lightblue. Use it to manage lightblue dependency versions in your project, i.e.:
 
-```
+```xml
 <dependencyManagement>
     <dependencies>
        <dependency>
