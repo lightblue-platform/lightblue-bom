@@ -3,10 +3,10 @@
     <parent>
         <groupId>com.redhat.lightblue</groupId>
         <artifactId>lightblue-bom-parent</artifactId>
-        <version>1.10.2</version>
+        <version>1.10.3-SNAPSHOT</version>
     </parent>
 	<artifactId>lightblue-bom</artifactId>
-	<version>1.10.2</version>
+	<version>1.10.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
 		<migrator.version>2.14.0</migrator.version>
