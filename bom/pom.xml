@@ -9,10 +9,10 @@
 	<version>1.12.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
-		<migrator.version>2.18.0</migrator.version>
-		<client.version>4.0.0</client.version>
-		<lightblue.version>1.11.0</lightblue.version>
-		<lightblue.rest.version>2.0.0</lightblue.rest.version>
+		<migrator.version>2.19.0-SNAPSHOT</migrator.version>
+		<client.version>4.1.0-SNAPSHOT</client.version>
+		<lightblue.version>1.12.0-SNAPSHOT</lightblue.version>
+		<lightblue.rest.version>2.1.0-SNAPSHOT</lightblue.rest.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
