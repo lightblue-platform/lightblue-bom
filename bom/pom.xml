@@ -11,8 +11,8 @@
 	<properties>
 		<migrator.version>2.20.0-SNAPSHOT</migrator.version>
 		<client.version>4.2.0-SNAPSHOT</client.version>
-		<lightblue.version>1.12.0-SNAPSHOT</lightblue.version>
-		<lightblue.rest.version>2.1.0-SNAPSHOT</lightblue.rest.version>
+		<lightblue.version>1.13.0-SNAPSHOT</lightblue.version>
+		<lightblue.rest.version>2.2.0-SNAPSHOT</lightblue.rest.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
