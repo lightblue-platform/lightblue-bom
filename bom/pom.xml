@@ -8,10 +8,10 @@
 	<artifactId>lightblue-bom</artifactId>
 	<packaging>pom</packaging>
 	<properties>
-		<migrator.version>2.22.0-SNAPSHOT</migrator.version>
-		<client.version>4.2.0-SNAPSHOT</client.version>
-		<lightblue.version>1.14.0-SNAPSHOT</lightblue.version>
-		<lightblue.rest.version>2.4.0-SNAPSHOT</lightblue.rest.version>
+		<migrator.version>2.22.0</migrator.version>
+		<client.version>4.3.0</client.version>
+		<lightblue.version>1.13.0</lightblue.version>
+		<lightblue.rest.version>2.3.0</lightblue.rest.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
