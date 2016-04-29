@@ -10,8 +10,9 @@
 	<properties>
 		<migrator.version>2.24.0-SNAPSHOT</migrator.version>
 		<client.version>4.5.0-SNAPSHOT</client.version>
-		<lightblue.version>1.15.0-SNAPSHOT</lightblue.version>
-		<lightblue.rest.version>2.6.0-SNAPSHOT</lightblue.rest.version>
+		<core.version>1.15.0-SNAPSHOT</core.version>
+		<mongo.version>1.16.0-SNAPSHOT</mongo.version>
+		<rest.version>2.6.0-SNAPSHOT</rest.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -24,22 +25,22 @@
 			<dependency>
 				<groupId>com.redhat.lightblue.mongo</groupId>
 				<artifactId>lightblue-mongo</artifactId>
-				<version>${lightblue.version}</version>
+				<version>${mongo.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.redhat.lightblue</groupId>
 				<artifactId>lightblue-core-crud</artifactId>
-				<version>${lightblue.version}</version>
+				<version>${core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.redhat.lightblue</groupId>
 				<artifactId>lightblue-core-util</artifactId>
-				<version>${lightblue.version}</version>
+				<version>${core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.redhat.lightblue.rest</groupId>
 				<artifactId>lightblue-rest-metadata</artifactId>
-				<version>${lightblue.rest.version}</version>
+				<version>${rest.version}</version>
 				<classifier>classes</classifier>
 			</dependency>
 
