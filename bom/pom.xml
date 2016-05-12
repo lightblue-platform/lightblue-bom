@@ -9,7 +9,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<migrator.version>2.33.0</migrator.version>
-		<client.version>4.4.0</client.version>
+		<client.version>4.5.0</client.version>
 		<core.version>1.15.0</core.version>
 		<mongo.version>1.16.0</mongo.version>
 		<rest.version>2.6.0</rest.version>
