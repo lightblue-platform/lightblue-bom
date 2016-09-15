@@ -8,7 +8,7 @@
 	<artifactId>lightblue-bom</artifactId>
 	<packaging>pom</packaging>
 	<properties>
-		<migrator.version>2.49.0-SNAPSHOT</migrator.version>
+		<migrator.version>2.50.0-SNAPSHOT</migrator.version>
 		<client.version>5.4.0-SNAPSHOT</client.version>
 		<core.version>2.3.0-SNAPSHOT</core.version>
 		<mongo.version>1.21.0-SNAPSHOT</mongo.version>
