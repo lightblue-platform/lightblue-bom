@@ -6,13 +6,14 @@
         <version>2.0.13-SNAPSHOT</version>
     </parent>
 	<artifactId>lightblue-bom</artifactId>
+    <version>2.0.13-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
-		<migrator.version>2.51.0-SNAPSHOT</migrator.version>
-		<client.version>5.7.0-SNAPSHOT</client.version>
-		<core.version>2.6.0-SNAPSHOT</core.version>
-		<mongo.version>1.25.0-SNAPSHOT</mongo.version>
-		<rest.version>2.14.0-SNAPSHOT</rest.version>
+		<migrator.version>2.50.0</migrator.version>
+		<client.version>5.6.0</client.version>
+		<core.version>2.5.0</core.version>
+		<mongo.version>1.23.0</mongo.version>
+		<rest.version>2.12.0</rest.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
