@@ -11,9 +11,9 @@
 	<properties>
 		<migrator.version>2.55.0</migrator.version>
 		<client.version>5.13.0</client.version>
-		<core.version>2.13.0</core.version>
-		<mongo.version>1.32.0</mongo.version>
-		<rest.version>2.24.0</rest.version>
+		<core.version>2.14.0-SNAPSHOT</core.version>
+		<mongo.version>1.33.0-SNAPSHOT</mongo.version>
+		<rest.version>2.25.0-SNAPSHOT</rest.version>
 		<audit-hook.version>1.10.0</audit-hook.version>
 	</properties>
 	<dependencyManagement>
