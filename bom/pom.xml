@@ -9,12 +9,12 @@
     <version>2.6.5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
-		<migrator.version>2.56.2-SNAPSHOT</migrator.version>
-		<client.version>5.16.0-SNAPSHOT</client.version>
-		<core.version>2.16.0-SNAPSHOT</core.version>
-		<mongo.version>1.34.0-SNAPSHOT</mongo.version>
-		<rest.version>2.26.0-SNAPSHOT</rest.version>
-		<audit-hook.version>1.11.0-SNAPSHOT</audit-hook.version>
+		<migrator.version>2.56.1</migrator.version>
+		<client.version>5.16.0</client.version>
+		<core.version>2.17.0</core.version>
+		<mongo.version>1.34.0</mongo.version>
+		<rest.version>2.27.0</rest.version>
+		<audit-hook.version>1.10.0</audit-hook.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
