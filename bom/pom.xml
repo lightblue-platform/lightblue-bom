@@ -16,7 +16,7 @@
 		<rest.version>2.30.0</rest.version>
 		<audit-hook.version>1.10.0</audit-hook.version>
 		<java-generator.version>0.1.8</java-generator.version>
-		<notification-hook.version>0.1.3</notification-hook.version>
+		<notification-hook.version>0.1.7</notification-hook.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
