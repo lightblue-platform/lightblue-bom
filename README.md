@@ -6,7 +6,7 @@ A bom maven dependency for lightblue. Use it to manage lightblue dependency vers
        <dependency>
           <groupId>com.redhat.lightblue</groupId>
           <artifactId>lightblue-bom</artifactId>
-          <version>1.11.0-SNAPSHOT</version>
+          <version>2.6.7</version>
           <type>pom</type>
           <scope>import</scope>
        </dependency>

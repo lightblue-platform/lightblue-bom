@@ -76,6 +76,23 @@
 				<artifactId>lightblue-java-generator-bin</artifactId>
 				<version>${java-generator.version}</version>
 			</dependency>
+            <dependency>
+                <groupId>com.redhat.lightblue.generator</groupId>
+                <artifactId>lightblue-java-generator</artifactId>
+                <version>${java-generator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.redhat.lightblue.generator</groupId>
+                <artifactId>lightblue-java-generator-api</artifactId>
+                <version>${java-generator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.redhat.lightblue.generator</groupId>
+                <artifactId>lightblue-java-generator-lib</artifactId>
+                <version>${java-generator.version}</version>
+                <scope>test</scope>
+            </dependency>
+
 			<dependency>
             	<groupId>org.esbtools.lightblue-notification-hook</groupId>
             	<artifactId>lightblue-notification-hook-model</artifactId>
