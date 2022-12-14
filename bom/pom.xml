@@ -10,12 +10,12 @@
 	<packaging>pom</packaging>
 	<properties>
 		<audit-hook.version>1.10.0</audit-hook.version>
-		<core.version>2.17.0</core.version>
-		<client.version>5.19.0</client.version>
+		<core.version>2.18.0-SNAPSHOT</core.version>
+		<client.version>5.20.0-SNAPSHOT</client.version>
 		<java-generator.version>0.1.8</java-generator.version>
-		<mongo.version>1.38.0</mongo.version>
+		<mongo.version>1.40.0-SNAPSHOT</mongo.version>
 		<notification-hook.version>0.1.7</notification-hook.version>
-		<rest.version>2.30.0</rest.version>
+		<rest.version>2.32.0-SNAPSHOT</rest.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
